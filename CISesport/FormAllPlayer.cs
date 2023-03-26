@@ -40,7 +40,13 @@ namespace CISesport
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string fileName = openFileDialog1.FileName;
+                    // do something with the selected file
+                }
         }
 
         private void newPlayerToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -67,6 +73,11 @@ namespace CISesport
 
                 this.textBoxLName.Text = selectedPlayer.Name;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -104,7 +104,7 @@
             // newPlayerToolStripMenuItem1
             // 
             this.newPlayerToolStripMenuItem1.Name = "newPlayerToolStripMenuItem1";
-            this.newPlayerToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.newPlayerToolStripMenuItem1.Size = new System.Drawing.Size(166, 26);
             this.newPlayerToolStripMenuItem1.Text = "New Player";
             this.newPlayerToolStripMenuItem1.Click += new System.EventHandler(this.newPlayerToolStripMenuItem1_Click);
             // 
@@ -122,6 +122,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(537, 335);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ColumnName
             // 
